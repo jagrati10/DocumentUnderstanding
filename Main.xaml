@@ -95,7 +95,11 @@
   <Sequence DisplayName="DOCUMENT_UNDERSTANDING" sap:VirtualizedContainerService.HintSize="519.2,2078.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="p5:DocumentTaxonomy" Name="texo_output" />
-      <Variable x:TypeArguments="x:String" Default="C:\Users\Jagrati\Downloads\basic-invoice.png" Name="doc_path" />
+      <Variable x:TypeArguments="x:String" Name="doc_path">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">basic-invoice.png</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="doc_text" />
       <Variable x:TypeArguments="p3:Document" Name="docM_object" />
       <Variable x:TypeArguments="p2:ClassificationResult[]" Name="classificationResult" />
@@ -110,7 +114,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="477.6,105.6" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[texo_output]" />
-    <p:DigitizeDocument DegreeOfParallelism="1" DisplayName="Digitize Document" DocumentObjectModel="[docM_object]" DocumentPath="C:\Users\Jagrati\Downloads\basic-invoice.png" DocumentText="[doc_text]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="477.6,297.6" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+    <p:DigitizeDocument DegreeOfParallelism="1" DisplayName="Digitize Document" DocumentObjectModel="[docM_object]" DocumentPath="[doc_path]" DocumentText="[doc_text]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="477.6,297.6" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
       <p:DigitizeDocument.OCREngine>
         <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
           <ActivityFunc.Argument>
