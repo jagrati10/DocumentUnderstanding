@@ -1,0 +1,74 @@
+AC
+
+Bill to: Marty McFly
+
+ME Acme, Inc.
+555-555-1234 x137
+
+Ship to: Marty McFly
+
+Invoice Number Issue Date Due Date
+
+PAID
+
+#000009 2018-04-11 2018-04-11
+
+$685.35
+
+200 Billing Rd.     100 Shipping St.       
+Suite 100           Apt 200                
+Needham, MA 02494   Pleasantville, NC 12345
+
+Item
+
+Professional Planl 04/11/2018 - 05/11/2018
+
+Small Instance (Hourly)1
+
+Large Instance (Hourly)1
+
+Quantity
+
+1
+
+764
+
+943
+
+Discount(s) Applied:
+
+1. MULTI3 - Multi-service discount (10%)
+
+$76.15
+
+Payment History
+
+04/11/201803:20PM EDT Credit card payment: $685.35 (Visa, XXXX-XXXX-XXXX-1111)
+
+Unit Price
+
+$99.00
+
+$0.25
+
+$0.50
+
+Subtotal Discounts
+
+Total
+
+Paid
+
+Due
+
+Amount
+
+$99.00
+
+$191.00
+
+$471.50
+
+$761.50 ($76.15) $685.35
+
+$685.35 $0.00
