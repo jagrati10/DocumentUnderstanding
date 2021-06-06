@@ -156,11 +156,10 @@
           }
         }
       },
-      "Google.Apis/1.43.0": {
+      "Google.Apis/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.43.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Google.Apis.Core": "1.49.0"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -173,11 +172,11 @@
           "lib/net45/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.43.0": {
+      "Google.Apis.Auth/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.43.0",
-          "Google.Apis.Core": "1.43.0"
+          "Google.Apis": "1.49.0",
+          "Google.Apis.Core": "1.49.0"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -203,10 +202,10 @@
           "lib/net45/Google.Apis.Calendar.v3.dll": {}
         }
       },
-      "Google.Apis.Core/1.43.0": {
+      "Google.Apis.Core/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -242,6 +241,19 @@
         },
         "runtime": {
           "lib/net45/Google.Apis.PeopleService.v1.dll": {}
+        }
+      },
+      "Google.Apis.Vision.v1/1.49.0.2167": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.49.0",
+          "Google.Apis.Auth": "1.49.0"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Vision.v1.dll": {}
         }
       },
       "IvanAkcheurov.NTextCat.Lib/0.2.1.1": {
@@ -654,7 +666,7 @@
           "lib/net46/MimeKit.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/_._": {}
@@ -1233,6 +1245,102 @@
           }
         }
       },
+      "UiPath.GoogleVision.Activities/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Vision.v1": "1.49.0.2167",
+          "Newtonsoft.Json": "12.0.3",
+          "UiPath.Telemetry.Client": "1.3.18"
+        },
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Activities",
+          "System.Activities.Core.Presentation",
+          "System.Activities.Presentation",
+          "System.Core",
+          "System.Xaml",
+          "System.Xml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/UiPath.GoogleVision.Activities.Design.dll": {},
+          "lib/net461/UiPath.GoogleVision.Activities.dll": {},
+          "lib/net461/UiPath.GoogleVision.dll": {}
+        },
+        "resource": {
+          "lib/net461/de/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.GoogleVision.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.GoogleVision.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.GoogleVision.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.GoogleVision.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/ja/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.GoogleVision.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ko/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.GoogleVision.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.GoogleVision.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.GoogleVision.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.GoogleVision.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/tr/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.GoogleVision.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.GoogleVision.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.IntelligentOCR.Activities/4.13.1": {
         "type": "package",
         "dependencies": {
@@ -2429,10 +2537,10 @@
           }
         }
       },
-      "UiPath.Vision/3.0.0-preview": {
+      "UiPath.Vision/3.0.1": {
         "type": "package",
         "dependencies": {
-          "UiPath.OCR.Contracts": "2.7.2-preview"
+          "UiPath.OCR.Contracts": "2.7.3"
         },
         "compile": {
           "lib/net461/_._": {}
@@ -2614,11 +2722,10 @@
           }
         }
       },
-      "Google.Apis/1.43.0": {
+      "Google.Apis/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.43.0",
-          "Newtonsoft.Json": "10.0.2"
+          "Google.Apis.Core": "1.49.0"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -2631,11 +2738,11 @@
           "lib/net45/Google.Apis.dll": {}
         }
       },
-      "Google.Apis.Auth/1.43.0": {
+      "Google.Apis.Auth/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.43.0",
-          "Google.Apis.Core": "1.43.0"
+          "Google.Apis": "1.49.0",
+          "Google.Apis.Core": "1.49.0"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -2661,10 +2768,10 @@
           "lib/net45/Google.Apis.Calendar.v3.dll": {}
         }
       },
-      "Google.Apis.Core/1.43.0": {
+      "Google.Apis.Core/1.49.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "10.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "frameworkAssemblies": [
           "System.Net.Http"
@@ -2700,6 +2807,19 @@
         },
         "runtime": {
           "lib/net45/Google.Apis.PeopleService.v1.dll": {}
+        }
+      },
+      "Google.Apis.Vision.v1/1.49.0.2167": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.49.0",
+          "Google.Apis.Auth": "1.49.0"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Apis.Vision.v1.dll": {}
         }
       },
       "IvanAkcheurov.NTextCat.Lib/0.2.1.1": {
@@ -3112,7 +3232,7 @@
           "lib/net46/MimeKit.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/net45/_._": {}
@@ -3681,6 +3801,102 @@
           }
         }
       },
+      "UiPath.GoogleVision.Activities/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Vision.v1": "1.49.0.2167",
+          "Newtonsoft.Json": "12.0.3",
+          "UiPath.Telemetry.Client": "1.3.18"
+        },
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Activities",
+          "System.Activities.Core.Presentation",
+          "System.Activities.Presentation",
+          "System.Core",
+          "System.Xaml",
+          "System.Xml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/UiPath.GoogleVision.Activities.Design.dll": {},
+          "lib/net461/UiPath.GoogleVision.Activities.dll": {},
+          "lib/net461/UiPath.GoogleVision.dll": {}
+        },
+        "resource": {
+          "lib/net461/de/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/de/UiPath.GoogleVision.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net461/es-MX/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es-MX/UiPath.GoogleVision.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net461/es/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/es/UiPath.GoogleVision.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net461/fr/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/fr/UiPath.GoogleVision.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net461/ja/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ja/UiPath.GoogleVision.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net461/ko/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/ko/UiPath.GoogleVision.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net461/pt-BR/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt-BR/UiPath.GoogleVision.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net461/pt/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/pt/UiPath.GoogleVision.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net461/ru/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/ru/UiPath.GoogleVision.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net461/tr/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/tr/UiPath.GoogleVision.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net461/zh-CN/UiPath.GoogleVision.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net461/zh-CN/UiPath.GoogleVision.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.IntelligentOCR.Activities/4.13.1": {
         "type": "package",
         "dependencies": {
@@ -4877,10 +5093,10 @@
           }
         }
       },
-      "UiPath.Vision/3.0.0-preview": {
+      "UiPath.Vision/3.0.1": {
         "type": "package",
         "dependencies": {
-          "UiPath.OCR.Contracts": "2.7.2-preview"
+          "UiPath.OCR.Contracts": "2.7.3"
         },
         "compile": {
           "lib/net461/_._": {}
@@ -5086,16 +5302,15 @@
         "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
-    "Google.Apis/1.43.0": {
-      "sha512": "obrhmOs3G1NdKb6vJukj5nls3FJ8qcheSugvUDA5fHA+4sb9hOvSgtR4rzSiBFTSn30d8C9aJAUFlBtcFi4ltA==",
+    "Google.Apis/1.49.0": {
+      "sha512": "fmXQQTxZFOBlnvokvdQMzq0Lt+g2QzpZ4H6U8lMMFHgAR8ZqxQnPN5yHDpoHf7a++hJHb5W3pALxauGsq+afKQ==",
       "type": "package",
-      "path": "google.apis/1.43.0",
+      "path": "google.apis/1.49.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.43.0.nupkg.sha512",
+        "google.apis.1.49.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -5109,16 +5324,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.43.0": {
-      "sha512": "612MnDeSfltoLztQnlG78ndEJn4kCKP/tnqKMI4l0biZoVJb9l+H1KtU1tTLW1ftiq+mgSoGfAR4jS2JGGOJRA==",
+    "Google.Apis.Auth/1.49.0": {
+      "sha512": "3V9ohvixQtjaEvk7T9Ac7E/KvwEPa7eL4aMNreJDI0CEPzCdQdk2zCvaJPRrNIjhe+UuBeOeom1oAOMFB74JHg==",
       "type": "package",
-      "path": "google.apis.auth/1.43.0",
+      "path": "google.apis.auth/1.49.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.43.0.nupkg.sha512",
+        "google.apis.auth.1.49.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -5161,15 +5376,15 @@
         "lib/netstandard2.0/Google.Apis.Calendar.v3.xml"
       ]
     },
-    "Google.Apis.Core/1.43.0": {
-      "sha512": "Y5uzXQP58JFV1VKENO+/IALD1ID8PSff8jFVL9jYUdiXKCI82/1hR8PAx4sQcAenFrFgCNAPSwYJRFJ46OvtBQ==",
+    "Google.Apis.Core/1.49.0": {
+      "sha512": "9DgGdtyzgrCfHWwc/HiDXDbykNMeKQozbEHYEUEcezRuH+YR3fvq7YGVBDmUM8g6qEL3kDk6h5EU4h0IJwue1w==",
       "type": "package",
-      "path": "google.apis.core/1.43.0",
+      "path": "google.apis.core/1.49.0",
       "files": [
         ".nupkg.metadata",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.43.0.nupkg.sha512",
+        "google.apis.core.1.49.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -5234,6 +5449,33 @@
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.pdb",
         "lib/netstandard2.0/Google.Apis.PeopleService.v1.xml"
+      ]
+    },
+    "Google.Apis.Vision.v1/1.49.0.2167": {
+      "sha512": "CxPaxeM77+n5Yr1hio0mUUkE8+iPV2jrHJ0QYChWzloZ+3c1DSBX/n2Vc8Qs32N4FHGzP3BuggMFQCA3Au5bdA==",
+      "type": "package",
+      "path": "google.apis.vision.v1/1.49.0.2167",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.vision.v1.1.49.0.2167.nupkg.sha512",
+        "google.apis.vision.v1.nuspec",
+        "lib/net40/Google.Apis.Vision.v1.dll",
+        "lib/net40/Google.Apis.Vision.v1.pdb",
+        "lib/net40/Google.Apis.Vision.v1.xml",
+        "lib/net45/Google.Apis.Vision.v1.dll",
+        "lib/net45/Google.Apis.Vision.v1.pdb",
+        "lib/net45/Google.Apis.Vision.v1.xml",
+        "lib/netstandard1.0/Google.Apis.Vision.v1.dll",
+        "lib/netstandard1.0/Google.Apis.Vision.v1.pdb",
+        "lib/netstandard1.0/Google.Apis.Vision.v1.xml",
+        "lib/netstandard1.3/Google.Apis.Vision.v1.dll",
+        "lib/netstandard1.3/Google.Apis.Vision.v1.pdb",
+        "lib/netstandard1.3/Google.Apis.Vision.v1.xml",
+        "lib/netstandard2.0/Google.Apis.Vision.v1.dll",
+        "lib/netstandard2.0/Google.Apis.Vision.v1.pdb",
+        "lib/netstandard2.0/Google.Apis.Vision.v1.xml"
       ]
     },
     "IvanAkcheurov.NTextCat.Lib/0.2.1.1": {
@@ -5851,12 +6093,13 @@
         "mimekit.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5876,8 +6119,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NLog/4.5.11": {
@@ -6858,6 +7102,45 @@
         "lib/net5.0-windows7.0/zh-CN/UiPath.Excel.resources.dll",
         "uipath.excel.activities.2.10.2-preview.nupkg.sha512",
         "uipath.excel.activities.nuspec"
+      ]
+    },
+    "UiPath.GoogleVision.Activities/1.2.1": {
+      "sha512": "uMhG3XU/Z9jrQkYoCIbzJcmjY4H3eMfNq++qyEBPRkyLGiNzeIAAs2pyj+igyp8snCR9rKGFuSh3CCPwTsUNRw==",
+      "type": "package",
+      "path": "uipath.googlevision.activities/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.GoogleVision.Activities.Design.dll",
+        "lib/net461/UiPath.GoogleVision.Activities.Design.xml",
+        "lib/net461/UiPath.GoogleVision.Activities.dll",
+        "lib/net461/UiPath.GoogleVision.Activities.xml",
+        "lib/net461/UiPath.GoogleVision.dll",
+        "lib/net461/UiPath.GoogleVision.xml",
+        "lib/net461/de/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.GoogleVision.resources.dll",
+        "lib/net461/es-MX/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.GoogleVision.resources.dll",
+        "lib/net461/es/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.GoogleVision.resources.dll",
+        "lib/net461/fr/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.GoogleVision.resources.dll",
+        "lib/net461/ja/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.GoogleVision.resources.dll",
+        "lib/net461/ko/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.GoogleVision.resources.dll",
+        "lib/net461/pt-BR/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.GoogleVision.resources.dll",
+        "lib/net461/pt/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.GoogleVision.resources.dll",
+        "lib/net461/ru/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.GoogleVision.resources.dll",
+        "lib/net461/tr/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.GoogleVision.resources.dll",
+        "lib/net461/zh-CN/UiPath.GoogleVision.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.GoogleVision.resources.dll",
+        "uipath.googlevision.activities.1.2.1.nupkg.sha512",
+        "uipath.googlevision.activities.nuspec"
       ]
     },
     "UiPath.IntelligentOCR.Activities/4.13.1": {
@@ -7891,10 +8174,10 @@
         "uipath.uiautomation.activities.nuspec"
       ]
     },
-    "UiPath.Vision/3.0.0-preview": {
-      "sha512": "BN9Cp1swDAPHQgs3YtXktF9daFGCSQ1rSTAazm3zYS8zDGyOcXIUVCbKWi5lw0vkDU8ulFiGRz5pRe64kUDR7Q==",
+    "UiPath.Vision/3.0.1": {
+      "sha512": "AoRCqHQuNQJKnumw6Jy8pfBOEPSoIJLDlURjokqkej3G79MC52XzsMLGo/XLqyVfDPmuJlvdRDSRjTpL8INADg==",
       "type": "package",
-      "path": "uipath.vision/3.0.0-preview",
+      "path": "uipath.vision/3.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7950,7 +8233,7 @@
         "lib/net461/UiPath.Vision.Microsoft.dll",
         "lib/net461/UiPath.Vision.Tesseract.dll",
         "lib/net461/UiPath.Vision.dll",
-        "uipath.vision.3.0.0-preview.nupkg.sha512",
+        "uipath.vision.3.0.1.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
     },
@@ -7971,13 +8254,16 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "AForge.Imaging >= 2.2.5 <= 2.2.5",
       "UiPath.DocumentUnderstanding.ML.Activities >= 1.7.0 <= 1.7.0",
       "UiPath.Excel.Activities >= 2.10.2-preview <= 2.10.2-preview",
+      "UiPath.GoogleVision.Activities >= 1.2.1 <= 1.2.1",
       "UiPath.IntelligentOCR.Activities >= 4.13.1 <= 4.13.1",
       "UiPath.Mail.Activities >= 1.10.2-preview <= 1.10.2-preview",
       "UiPath.OmniPage.Activities >= 1.7.1 <= 1.7.1",
       "UiPath.System.Activities >= 21.2.1-preview <= 21.2.1-preview",
-      "UiPath.UIAutomation.Activities >= 21.2.0-preview <= 21.2.0-preview"
+      "UiPath.UIAutomation.Activities >= 21.2.0-preview <= 21.2.0-preview",
+      "UiPath.Vision >= 3.0.1 <= 3.0.1"
     ]
   },
   "packageFolders": {
@@ -7994,6 +8280,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "AForge.Imaging": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2.2.5, 2.2.5]"
+          },
           "UiPath.DocumentUnderstanding.ML.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -8003,6 +8294,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[2.10.2-preview, 2.10.2-preview]"
+          },
+          "UiPath.GoogleVision.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.2.1, 1.2.1]"
           },
           "UiPath.IntelligentOCR.Activities": {
             "include": "Runtime",
@@ -8028,6 +8324,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[21.2.0-preview, 21.2.0-preview]"
+          },
+          "UiPath.Vision": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[3.0.1, 3.0.1]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\Jagrati\\AppData\\Local\\UiPath\\app-21.2.0-beta0044\\runtime.json"

@@ -73,6 +73,79 @@
           ]
         }
       ]
+    },
+    {
+      "DocumentTypeId": "invoicegroup.expenses.receipts",
+      "Group": "invoice group",
+      "Category": "expenses",
+      "Name": "receipts",
+      "OptionalUniqueIdentifier": null,
+      "TypeField": {
+        "FieldId": "invoicegroup.expenses.receipts.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "invoicegroup.expenses.receipts.InvoiceNumber",
+          "FieldName": "Invoice Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "invoicegroup.expenses.receipts.BillTo",
+          "FieldName": "Bill To",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "invoicegroup.expenses.receipts.ShipTo",
+          "FieldName": "Ship To",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        },
+        {
+          "FieldId": "invoicegroup.expenses.receipts.TotalAmount",
+          "FieldName": "Total Amount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
+        }
+      ]
     }
   ],
   "Groups": [
@@ -80,6 +153,12 @@
       "Name": "Invoice",
       "Categories": [
         "ACME"
+      ]
+    },
+    {
+      "Name": "invoice group",
+      "Categories": [
+        "expenses"
       ]
     }
   ],
